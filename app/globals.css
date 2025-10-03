@@ -1,0 +1,166 @@
+@import "tailwindcss";
+
+/* ============================================================================
+   FOCUS THEME - Design System
+   ============================================================================
+   
+   Built with:
+   - Tailwind CSS v4 (@theme directive)
+   - OKLCH color space (perceptual uniformity)
+   - ShadCN theming architecture
+   - Dark mode via next-themes
+   
+   Color Philosophy:
+   - Primary: Deep purple-blue (oklch(0.3517 0.2070 264.5170))
+   - Professional, accessible, modern
+   - Full light + dark mode support
+   ============================================================================ */
+
+@layer base {
+  :root {
+    /* ===== Semantic Colors (Light Mode) ===== */
+    --background: oklch(1 0 0);
+    --foreground: oklch(0.1490 0.0048 264.6962);
+    
+    --card: oklch(1 0 0);
+    --card-foreground: oklch(0.1490 0.0048 264.6962);
+    
+    --popover: oklch(1 0 0);
+    --popover-foreground: oklch(0.1490 0.0048 264.6962);
+    
+    --primary: oklch(0.3517 0.2070 264.5170);
+    --primary-foreground: oklch(0.9833 0.0143 264.7042);
+    
+    --secondary: oklch(0.9608 0.0108 264.6530);
+    --secondary-foreground: oklch(0.1490 0.0048 264.6962);
+    
+    --muted: oklch(0.9608 0.0108 264.6530);
+    --muted-foreground: oklch(0.5255 0.0315 264.6571);
+    
+    --accent: oklch(0.9608 0.0108 264.6530);
+    --accent-foreground: oklch(0.1490 0.0048 264.6962);
+    
+    --destructive: oklch(0.5771 0.2150 23.6459);
+    --destructive-foreground: oklch(0.9833 0.0143 264.7042);
+    
+    --border: oklch(0.9216 0.0121 264.6604);
+    --input: oklch(0.9216 0.0121 264.6604);
+    --ring: oklch(0.1490 0.0048 264.6962);
+    
+    /* ===== Typography ===== */
+    --font-sans: 'Noto Sans', system-ui, -apple-system, sans-serif;
+    --font-serif: 'Noto Serif', Georgia, serif;
+    --font-mono: 'Geist', 'Courier New', monospace;
+    
+    /* ===== Dimensions ===== */
+    --radius: 0.5rem;
+    
+    /* ===== Shadows ===== */
+    --shadow-2xs: 0px 4px 8px 0px hsl(229.5652 96.4072% 32.7451% / 0.05);
+    --shadow-xs: 0px 8px 16px 0px hsl(229.5652 96.4072% 32.7451% / 0.1);
+    --shadow-sm: 0px 16px 24px 0px hsl(229.5652 96.4072% 32.7451% / 0.15);
+    --shadow-md: 0px 24px 32px 0px hsl(229.5652 96.4072% 32.7451% / 0.2);
+    --shadow-lg: 0px 32px 48px 0px hsl(229.5652 96.4072% 32.7451% / 0.25);
+    --shadow-xl: 0px 48px 64px 0px hsl(229.5652 96.4072% 32.7451% / 0.3);
+    --shadow-2xl: 0px 64px 96px 0px hsl(229.5652 96.4072% 32.7451% / 0.35);
+    
+    /* ===== Letter Spacing ===== */
+    --tracking-tighter: -0.05em;
+    --tracking-tight: -0.025em;
+    --tracking-normal: 0em;
+    --tracking-wide: 0.025em;
+    --tracking-wider: 0.05em;
+    --tracking-widest: 0.1em;
+  }
+  
+  .dark {
+    /* ===== Semantic Colors (Dark Mode) ===== */
+    --background: oklch(0.1490 0.0048 264.6962);
+    --foreground: oklch(0.9833 0.0143 264.7042);
+    
+    --card: oklch(0.1490 0.0048 264.6962);
+    --card-foreground: oklch(0.9833 0.0143 264.7042);
+    
+    --popover: oklch(0.1490 0.0048 264.6962);
+    --popover-foreground: oklch(0.9833 0.0143 264.7042);
+    
+    --primary: oklch(0.9833 0.0143 264.7042);
+    --primary-foreground: oklch(0.1490 0.0048 264.6962);
+    
+    --secondary: oklch(0.2255 0.0187 264.6803);
+    --secondary-foreground: oklch(0.9833 0.0143 264.7042);
+    
+    --muted: oklch(0.2255 0.0187 264.6803);
+    --muted-foreground: oklch(0.7000 0.0522 264.6461);
+    
+    --accent: oklch(0.2255 0.0187 264.6803);
+    --accent-foreground: oklch(0.9833 0.0143 264.7042);
+    
+    --destructive: oklch(0.6366 0.2373 23.5954);
+    --destructive-foreground: oklch(0.9833 0.0143 264.7042);
+    
+    --border: oklch(0.2255 0.0187 264.6803);
+    --input: oklch(0.2255 0.0187 264.6803);
+    --ring: oklch(0.5255 0.0315 264.6571);
+  }
+}
+
+/* ============================================================================
+   TAILWIND V4 THEME CONFIGURATION
+   ============================================================================
+   
+   The @theme directive maps CSS variables to Tailwind utilities.
+   This enables:
+   - CSS-first configuration (no JS config needed)
+   - Runtime theme switching via CSS variables
+   - ShadCN component compatibility
+   ============================================================================ */
+
+@theme inline {
+  /* Typography */
+  --font-family-sans: var(--font-sans);
+  --font-family-serif: var(--font-serif);
+  --font-family-mono: var(--font-mono);
+  
+  /* Border Radius */
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  
+  /* Colors - Mapped to Tailwind color utilities */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+}
+
+/* ============================================================================
+   BASE STYLES
+   ============================================================================ */
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
