@@ -1,0 +1,186 @@
+{
+  "color": {
+    "light": {
+      "background": {
+        "$value": "oklch(1 0 0)",
+        "$type": "color",
+        "$description": "Primary background color"
+      },
+      "foreground": {
+        "$value": "oklch(0.1490 0.0048 264.6962)",
+        "$type": "color",
+        "$description": "Primary text color"
+      },
+      "card": {
+        "$value": "oklch(1 0 0)",
+        "$type": "color",
+        "$description": "Card background"
+      },
+      "cardForeground": {
+        "$value": "oklch(0.1490 0.0048 264.6962)",
+        "$type": "color",
+        "$description": "Card text color"
+      },
+      "popover": {
+        "$value": "oklch(1 0 0)",
+        "$type": "color"
+      },
+      "popoverForeground": {
+        "$value": "oklch(0.1490 0.0048 264.6962)",
+        "$type": "color"
+      },
+      "primary": {
+        "$value": "oklch(0.3517 0.2070 264.5170)",
+        "$type": "color",
+        "$description": "Brand primary color - deep purple-blue"
+      },
+      "primaryForeground": {
+        "$value": "oklch(0.9833 0.0143 264.7042)",
+        "$type": "color"
+      },
+      "secondary": {
+        "$value": "oklch(0.9608 0.0108 264.6530)",
+        "$type": "color"
+      },
+      "secondaryForeground": {
+        "$value": "oklch(0.1490 0.0048 264.6962)",
+        "$type": "color"
+      },
+      "muted": {
+        "$value": "oklch(0.9608 0.0108 264.6530)",
+        "$type": "color"
+      },
+      "mutedForeground": {
+        "$value": "oklch(0.5255 0.0315 264.6571)",
+        "$type": "color"
+      },
+      "accent": {
+        "$value": "oklch(0.9608 0.0108 264.6530)",
+        "$type": "color"
+      },
+      "accentForeground": {
+        "$value": "oklch(0.1490 0.0048 264.6962)",
+        "$type": "color"
+      },
+      "destructive": {
+        "$value": "oklch(0.5771 0.2150 23.6459)",
+        "$type": "color"
+      },
+      "destructiveForeground": {
+        "$value": "oklch(0.9833 0.0143 264.7042)",
+        "$type": "color"
+      },
+      "border": {
+        "$value": "oklch(0.9216 0.0121 264.6604)",
+        "$type": "color"
+      },
+      "input": {
+        "$value": "oklch(0.9216 0.0121 264.6604)",
+        "$type": "color"
+      },
+      "ring": {
+        "$value": "oklch(0.1490 0.0048 264.6962)",
+        "$type": "color"
+      }
+    },
+    "dark": {
+      "background": {
+        "$value": "oklch(0.1490 0.0048 264.6962)",
+        "$type": "color"
+      },
+      "foreground": {
+        "$value": "oklch(0.9833 0.0143 264.7042)",
+        "$type": "color"
+      },
+      "card": {
+        "$value": "oklch(0.1490 0.0048 264.6962)",
+        "$type": "color"
+      },
+      "cardForeground": {
+        "$value": "oklch(0.9833 0.0143 264.7042)",
+        "$type": "color"
+      },
+      "popover": {
+        "$value": "oklch(0.1490 0.0048 264.6962)",
+        "$type": "color"
+      },
+      "popoverForeground": {
+        "$value": "oklch(0.9833 0.0143 264.7042)",
+        "$type": "color"
+      },
+      "primary": {
+        "$value": "oklch(0.9833 0.0143 264.7042)",
+        "$type": "color"
+      },
+      "primaryForeground": {
+        "$value": "oklch(0.1490 0.0048 264.6962)",
+        "$type": "color"
+      },
+      "secondary": {
+        "$value": "oklch(0.2255 0.0187 264.6803)",
+        "$type": "color"
+      },
+      "secondaryForeground": {
+        "$value": "oklch(0.9833 0.0143 264.7042)",
+        "$type": "color"
+      },
+      "muted": {
+        "$value": "oklch(0.2255 0.0187 264.6803)",
+        "$type": "color"
+      },
+      "mutedForeground": {
+        "$value": "oklch(0.7000 0.0522 264.6461)",
+        "$type": "color"
+      },
+      "accent": {
+        "$value": "oklch(0.2255 0.0187 264.6803)",
+        "$type": "color"
+      },
+      "accentForeground": {
+        "$value": "oklch(0.9833 0.0143 264.7042)",
+        "$type": "color"
+      },
+      "destructive": {
+        "$value": "oklch(0.6366 0.2373 23.5954)",
+        "$type": "color"
+      },
+      "destructiveForeground": {
+        "$value": "oklch(0.9833 0.0143 264.7042)",
+        "$type": "color"
+      },
+      "border": {
+        "$value": "oklch(0.2255 0.0187 264.6803)",
+        "$type": "color"
+      },
+      "input": {
+        "$value": "oklch(0.2255 0.0187 264.6803)",
+        "$type": "color"
+      },
+      "ring": {
+        "$value": "oklch(0.5255 0.0315 264.6571)",
+        "$type": "color"
+      }
+    }
+  },
+  "dimension": {
+    "radius": {
+      "$value": "0.5rem",
+      "$type": "dimension",
+      "$description": "Base border radius"
+    }
+  },
+  "font": {
+    "sans": {
+      "$value": "Noto Sans, system-ui, -apple-system, sans-serif",
+      "$type": "fontFamily"
+    },
+    "serif": {
+      "$value": "Noto Serif, Georgia, serif",
+      "$type": "fontFamily"
+    },
+    "mono": {
+      "$value": "Geist, Courier New, monospace",
+      "$type": "fontFamily"
+    }
+  }
+}
